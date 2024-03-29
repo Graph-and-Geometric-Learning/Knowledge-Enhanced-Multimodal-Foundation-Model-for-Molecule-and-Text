@@ -42,3 +42,10 @@ Each dataset contains chebi_ids, smileses, texts, and kg_triples
 
 ## Pre-trained Model
 To download the pre-trained model, please click [here](https://drive.google.com/drive/folders/1nZn_tNJcE9stq2OJi6OgJKL50Wcr-lH_?usp=sharing). After downloading, unzip the folder and put it under this project folder. The code will automatically load it as a pre-trained model.
+
+## Testing and Inference
+During training, the code automatically saves the checkpoint of the model into `./ckpt` folder every `-ls` epochs. If you want to use the ckeckpoint to do testing and inference, please run the following command line.
+
+`python main.py -m test`
+
+The model will load the checkpoint and do testing and inference without optimizing the parameters. Please note that you need to use single node instead of DDP for testing and inference.
