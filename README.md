@@ -31,7 +31,7 @@ Please note that the code uses data distributed parallel (DDP) training, which r
 - -agg: aggregator, default = vt (set `vt` for virtual token aggregator, and `sum` for summation aggregator)
 
 ## Data
-We release PubChemKG and ChEBI datasets in `./data` folder.
+We release PubChemKG dataset in `./data` folder. ChEBI dataset can be downloaded [here](https://drive.google.com/file/d/1nXrRKU7xPUYxUdarAukoXSdPokYKj_QZ/view?usp=sharing). After downloading, please put it in `./data` folder.
 
 Each dataset contains chebi_ids, smileses, texts, and kg_triples
 
