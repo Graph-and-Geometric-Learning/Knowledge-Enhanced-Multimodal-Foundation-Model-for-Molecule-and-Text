@@ -20,7 +20,7 @@ Please note that the code uses data distributed parallel (DDP) training, which r
 - -ne: number of training epochs, default = 100
 - -ls: log steps, default = 10
 - -lr: learning rate, default = 1e-4
-- -flr: finetune learning rate, default = 1e-5
+- -flr: finetuning learning rate, default = 1e-5
 - -ms: minibatch size, default = 64
 - -tr: training ratio, the ratio of training molecules to the total molecules, default = 0.8
 - -mml: maximum length of molecules after being split into substructures, default = 128
@@ -39,3 +39,6 @@ Each dataset contains chebi_ids, smileses, texts, and kg_triples
 - smileses (Nx1): SMILES strings of N molecules.
 - texts (Nx1): textual descriptions of N molecules.
 - kg_triples (Nx1): knowledge graph triples of N molecules where each elemment in kg_triples is a dictionary containing up to 4 hops of triples.
+
+## Pre-trained Model
+To download the pre-trained model, please click "[here](https://drive.google.com/drive/folders/1nZn_tNJcE9stq2OJi6OgJKL50Wcr-lH_?usp=sharing)". After downloading, unzip the folder and put it under this project folder. The code will automatically load it as a pre-trained model.
