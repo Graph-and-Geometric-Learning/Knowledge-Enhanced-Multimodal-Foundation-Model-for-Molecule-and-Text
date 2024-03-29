@@ -7,7 +7,7 @@ The proposed model is a multi-modal foundation model for knowledge-enhanced mole
 ## Implementation Environment
 - python == 3.10
 - numpy == 1.20.3
-- pytorch == 2.0.0 (for pytorch version)
+- pytorch == 2.0.0
 
 ## Run
 `torchrun --nproc-per-node [num_nodes_on_your_gpu_such_as_4] main.py`
